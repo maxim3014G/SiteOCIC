@@ -11,11 +11,38 @@ body {
 
 p {
     font-family: "Open Sans", sans-serif;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+p.element-show {
+    opacity: 1;
+    transition: all 1.5s;
+    transform: translateY(0%);
+  }
+
+.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 9;
+
 }
 
 h1, h2 {
     text-align: center;
     font-family: "Playfair Display", serif;
+    opacity: 0;
+    transform: translateY(-20px);    
+
+}
+
+
+
+h1.element-show, h2.element-show {
+    opacity: 1;
+    transition: all 1.5s;
+    transform: translateY(0%);
+
 }
 
 
@@ -38,14 +65,6 @@ h1, h2 {
     font-size: 2.8rem;
 }
 
-.sticky {
-    background-color: #ffffff;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    padding-top: 10px;
-    z-index: 9;
-}
 
 .astra a {
     display: block;
@@ -127,6 +146,15 @@ h1, h2 {
 .text_button button {
     font-size: 0.85rem;
     border: 1px solid rgb(177, 171, 171);
+}
+
+
+
+.card_s {
+    width: 45%;
+    height: 55%;
+    background-color: white;
+    border-radius: 8px;
 }
 
 .ico-s {
