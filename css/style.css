@@ -9,6 +9,15 @@ body {
     padding: 0px;
 }
 
+.h1_link {
+    text-decoration: none;
+    color:  black;
+}
+
+.h1_link:hover {
+    color: rgb(170, 162, 162);
+}
+
 p {
     font-family: "Open Sans", sans-serif;
     opacity: 0;
@@ -36,7 +45,9 @@ h1, h2 {
 
 }
 
-
+h5 {
+    font-size: 1.2rem;
+}
 
 h1.element-show, h2.element-show {
     opacity: 1;
@@ -148,6 +159,37 @@ h1.element-show, h2.element-show {
     border: 1px solid rgb(177, 171, 171);
 }
 
+.reviews {
+    background-color: rgb(238, 246, 253);
+}
+
+.reviews_card {
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    padding: 20px;
+}
+
+.line-card {
+   
+    border-bottom: 2px solid gray;
+    width: 50%;
+    margin-bottom: 15px;
+}
+
+.name_reviews {
+    font-size: 1.4rem;
+    padding-bottom: 10px;
+    text-align: justify;
+}
+
+.text-reviews {
+    font-size: 0.9rem;
+}
+
+.card_date {
+    font-size: 0.8rem;
+    color: gray;
+}
 
 
 .card_s {
@@ -170,9 +212,10 @@ h1.element-show, h2.element-show {
 }
 
 
+
 @media screen and ((min-width: 0px) and (max-width: 576px)) {
     html {
-        font-size: 13.5px;
+        font-size: 16px;
     }
     .ico-s img {
         height: 30px;
@@ -180,16 +223,22 @@ h1.element-show, h2.element-show {
     .ico-s {
         width: 40px;
     }
+    .rest {
+        padding-top: 35px;
+    }
+    .reviews_card {
+        margin: 25px;
+    }
 
 
 }
 
 @media screen and ((min-width: 576px) and (max-width: 768px)) {
     html {
-        font-size: 14px;
+        font-size: 16px;
     } 
     .text, .text p {
-        font-size: 0.78rem;
+        font-size: 0.9rem;
     }
     .ico-s img {
         height: 40px;
@@ -197,6 +246,13 @@ h1.element-show, h2.element-show {
     .ico-s {
         width: 50px;
     }
+    .rest {
+        padding-top: 35px;
+    }
+    .reviews_card {
+        margin: 25px;
+    }
+
 }
 
 @media screen and ((min-width: 768px) and (max-width: 992px)) {
@@ -204,7 +260,7 @@ h1.element-show, h2.element-show {
         font-size: 16px;
     } 
     .text, .text p {
-        font-size: 0.85rem;
+        font-size: 1rem;
     }
     .ico-s img {
         height: 40px;
@@ -212,12 +268,18 @@ h1.element-show, h2.element-show {
     .ico-s {
         width: 50px;
     }
+    .rest {
+        padding-top: 35px;
+    }
 
+    .reviews_card {
+        margin: 25px;
+    }
 }
 
 @media screen and ((min-width: 992px) and (max-width: 1200px)) {
     .text p, .text {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
     
 
