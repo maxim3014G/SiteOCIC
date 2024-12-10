@@ -146,6 +146,14 @@ h1.element-show, h2.element-show {
 
 }
 
+
+.text-card {
+    
+    min-height: 400px;
+    height: 100%;
+    
+}
+
 .text_card h1 {
     font-size: 1.05rem;
 }
@@ -159,10 +167,7 @@ h1.element-show, h2.element-show {
     border: 1px solid rgb(177, 171, 171);
 }
 
-.text_company {
-    font-size: 1.15rem;
-    text-indent: 40px;
-}
+
 
 .reviews {
     background-color: rgb(238, 246, 253);
@@ -172,6 +177,8 @@ h1.element-show, h2.element-show {
     background-color: rgb(255, 255, 255);
     border-radius: 25px;
     padding: 20px;
+    max-height: 700px;
+    height: 100%;
 }
 
 .line-card {
@@ -187,16 +194,24 @@ h1.element-show, h2.element-show {
     font-size: 1.4rem;
     padding-bottom: 10px;
     text-align: justify;
+
+}
+
+.under_text-card {
+    height: 100%;
 }
 
 .text-reviews {
     font-size: 0.9rem;
+    
 }
 
 .card_date {
     font-size: 0.8rem;
     color: gray;
 }
+
+
 
 
 .card_s {
@@ -236,9 +251,18 @@ h1.element-show, h2.element-show {
     .reviews_card {
         margin: 25px;
     }
+    .text-card {
+    
+        min-height: 250px;
+        height: 100%;
+        
+    }
 
 
 }
+
+
+
 
 @media screen and ((min-width: 576px) and (max-width: 768px)) {
     html {
@@ -259,8 +283,24 @@ h1.element-show, h2.element-show {
     .reviews_card {
         margin: 25px;
     }
+    .text-card {
+    
+        min-height: 300px;
+        height: 100%;
+        
+    }
 
 }
+
+@media screen and ((min-width: 590px) and (max-width: 660px)) {
+    .text-card {
+    
+        min-height: 330px;
+        height: 100%;
+        
+    }
+}
+
 
 @media screen and ((min-width: 768px) and (max-width: 992px)) {
     html {
@@ -282,11 +322,33 @@ h1.element-show, h2.element-show {
     .reviews_card {
         margin: 25px;
     }
+    .text-card {
+    
+        min-height: 260px;
+        height: 100%;
+        
+    }
 }
 
 @media screen and ((min-width: 992px) and (max-width: 1200px)) {
     .text p, .text {
         font-size: 1rem;
+    }
+    .text-card {
+    
+        min-height: 570px;
+        height: 100%;
+        
+    }
+
+}
+
+@media screen and ((min-width: 1200px) and (max-width: 1440px)) {
+    .text-card {
+    
+        min-height: 500px;
+        height: 100%;
+        
     }
     
 
